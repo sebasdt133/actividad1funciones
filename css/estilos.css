@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../imagenes/estadio.jpg'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mejor visibilidad */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1, h2 {
+    color: #522258;
+    text-align: center;
+}
+
+input[type="text"], input[type="number"], input[type="button"], button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="button"], button {
+    background-color: #522258;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover, button:hover {
+    background-color: #6b2c6e;
+}
+
+p {
+    color: #522258;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos específicos para las secciones */
+#Sueldos label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form {
+    margin: 20px 0;
+}
+
+form input[type="number"] {
+    width: calc(100% - 20px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    section {
+        padding: 10px;
+    }
+    
+    input[type="button"], button {
+        font-size: 14px;
+    }
+}

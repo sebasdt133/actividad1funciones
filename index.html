@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="./favicon_io/favicon.ico">
+    <title>Actividad Funciones</title>
+</head>
+<body>
+    <h1>ACTIVIDAD 1 FUNCIONES</h1>
+<section>
+    <h1>ÁREA DE TRIÁNGULO</h1>
+    <input type="text" name="Base" id="base" placeholder="Ingrese la base del triángulo">
+    <input type="text" name="Altura" id="altura" placeholder="Ingrese la altura del triángulo">
+    <input type="button" value="RESULTADO" onclick="area()">
+    <p id="resultado"></p>
+</section>
+
+<section>
+    <h1>DATOS PERSONALES</h1>
+    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+    <input type="text" name="edad" id="edad" placeholder="Ingrese su edad">
+    <input type="text" name="ciudad" id="ciudad" placeholder="Ingrese su ciudad de origen">
+    <input type="text" name="telefono" id="telefono" placeholder="Ingrese su número de teléfono">
+    <input type="text" name="colonia" id="colonia" placeholder="Ingrese su colonia">
+    <input type="button" value="ENVIAR" onclick="datos()">
+    <p id="datos"></p>
+</section>
+
+<section>
+    <h1>SUELDOS Y NÓMINA</h1>
+    <form id="Nomina">
+        <div id="Sueldos">
+            <label for="sueldo1">Sueldo del trabajador 1:</label>
+            <input type="number" id="sueldo1" required>
+            <label for="sueldo2">Sueldo del trabajador 2:</label>
+            <input type="number" id="sueldo2" required>
+            <label for="sueldo3">Sueldo del trabajador 3:</label>
+            <input type="number" id="sueldo3" required>
+            <label for="sueldo4">Sueldo del trabajador 4:</label>
+            <input type="number" id="sueldo4" required>
+            <label for="sueldo5">Sueldo del trabajador 5:</label>
+            <input type="number" id="sueldo5" required>
+        </div>
+        <button type="button" onclick="calcularNomina()">CALCULAR NOMINA</button>
+    </form>
+    <p id="resultadoN"></p>
+</section>
+
+<section>
+    <h2>PROMEDIO</h2>
+    
+    <label for="materia1">Calificación de Materia 1:</label>
+    <input type="number" id="materia1" placeholder="Ingresa calificación de Materia 1" min="0" max="10">
+    
+    <label for="materia2">Calificación de Materia 2:</label>
+    <input type="number" id="materia2" placeholder="Ingresa calificación de Materia 2" min="0" max="10">
+    
+    <label for="materia3">Calificación de Materia 3:</label>
+    <input type="number" id="materia3" placeholder="Ingresa calificación de Materia 3" min="0" max="10">
+
+    <button onclick="calcularPromedio()">PROMEDIO</button>
+
+    <p id="resultadoC"></p>
+</div>
+</section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
